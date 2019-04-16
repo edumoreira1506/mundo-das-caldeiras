@@ -1,0 +1,738 @@
+/*
+
+Theme Name: Projeto WEB 2
+Theme URI: 
+Author: Bruno e Eduardo
+Author URI: http://bccaldas.com && http://eduardoem.com.br;
+Description: 
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: projetoweb2
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (Caldeiras Framework v1)
+--------------------------------------------
+*** BODY
+**** TOPO
+**** RODAPÉ
+**** COPYRIGHT
+**** ESTILOS GERAIS PARA AS PÁGINAS
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+font-family: 'Montserrat', sans-serif;
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: futuraLight;
+  src: url("../fonts/futuralight.otf");
+}
+
+@font-face{
+  font-family: futuraBold;
+  src: url("../fonts/futurabold.otf");
+}
+
+@font-face{
+  font-family: goodVibes;
+  src: url("../fonts/goodvibes.otf");
+}
+
+/* BODY */
+  #body{
+    overflow-x: hidden;
+  }
+  body.breakScroll{
+    overflow: hidden;
+  }
+/* EXTRAS */
+  ::-webkit-scrollbar              {background: #fff; width: 10px;}
+  ::-webkit-scrollbar-button       {background: #91111c}
+  ::-webkit-scrollbar-track        {}
+  ::-webkit-scrollbar-track-piece  {}
+  ::-webkit-scrollbar-thumb        {background: #91111c}
+  ::-webkit-scrollbar-corner       {}
+  ::-webkit-resizer                {}
+
+/* PRIMEIRA PÁGINA */
+  #zero{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+    #zero .bgVideo{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      margin: 0;
+    }
+    #zero #number{
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 5px 6px 4px #000;
+      font-family: futuraBold;
+    }
+  #one{
+    position: relative;
+    right: -100%;
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+  }
+  .one{
+    width: 100%;
+    background: url(../images/galaxyBackground.jpg);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+
+  }
+    .one .initial{
+      width: 100%;
+      padding: 0 10px;
+      position: relative;
+      min-height: 100vh;
+    }
+      .one .initial figure{
+          width: 100%;
+          max-width: 770px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+        .one .initial figure img{
+          width: 100%;
+          animation: rotatePlanet 50s infinite;
+        }
+    .one .initial .text{
+      color: #fff;
+      text-align: center;
+      text-shadow: 5px 6px 4px #000;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+      .one .initial .text h2{
+        font-family: goodVibes;
+        font-size: 130px;
+      }
+      .one .initial .text h1{
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: futuraBold;
+        font-size: 65px;
+        margin: 0;
+      }
+      .one .initial .text p{
+        display: inline-block;
+        font-family: futuralight;
+        font-size: 38px;
+        margin: 0 10px;
+      }
+      .one .initial a{
+        text-decoration: none;
+        display: block;
+        width: 17px;
+        height: 54px;
+        background-image: url(../images/arrow.png);
+        position: absolute;
+        bottom: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: cover!important;
+        background-position: center!important;
+        animation: moveArrow 5s infinite;
+      }
+    .one .data{
+      width: 100%;
+      padding: 0 10px;
+      position: relative;
+      min-height: 100vh;
+    }
+      .one .data .form{
+       width: 100%;
+       text-align: left;
+       padding: 0 10px;
+       margin-top: 260px;
+      }
+        .one .data .form form{
+   
+        }
+          .one .data .form form input{
+            display: block;
+            width: 100%;
+            max-width: 430px;
+            margin: 20px auto 0;
+            min-height: 40px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.73);
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: #070015;
+            font-family: 'Montserrat', sans-serif;
+          }
+          ::-webkit-input-placeholder  { 
+            color:#070015; 
+            font-family: 'Montserrat', sans-serif;}
+          input:-moz-placeholder { 
+            color:#070015; 
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          .one .data .form form button{
+            display: inline-block;
+            width: 100%;
+            max-width: 140px;
+            background: rgba(255, 255, 255, 0.73);
+            border-radius: 12px;
+            min-height: 40px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+            margin-left: 34px;
+          }
+      .one .data .astronaut{
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 100px;
+        position: relative;
+      }
+        .one .data .astronaut .messageAstronaut{
+          display: block;
+          color: #000;
+          background: #fff;
+          width: 100%;
+          max-width: 400px;
+          padding: 10px 15px;
+          border: 3px solid #303030;
+          border-radius: 14px;
+        }
+          .one .data .astronaut .messageAstronaut p {
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+          }
+        .one .data .astronaut figure{
+          width: 100%;
+          max-width: 500px;
+          position: absolute;
+          right: 16%;
+          top: 0;
+        }
+          .one .data .astronaut figure img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            animation: moveAstronaut 5s infinite;
+          }
+    .interative{
+      width: 100%;
+      padding: 0 10px;
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 100px;
+      padding-top: 60px;
+    }
+      .interative .textInterative{
+        width: 80%;
+        background: rgba(255, 255, 255, 0.73);
+        margin: 0 auto;
+        border-radius: 12px;
+        font-family: 'Montserrat', sans-serif;
+      }
+        .interative .textInterative p{
+          padding: 22px 30px;
+          margin: 0;
+          font-size: 20px;
+          font-style: italic;
+          color: #000;
+        }
+      .interative .buttons{
+        width: 80%;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+      }
+        .interative .buttons span{
+         border: 1px solid #fff;
+         display: block;
+         width: 100%;
+         max-width: 365px;
+         margin: 0 auto;
+         margin-top: 100px;
+         padding: 20px 20px;
+         border-radius: 12px;
+         text-transform: uppercase;
+         font-size: 40px;
+         font-family: 'Montserrat', sans-serif;
+         font-style: italic;
+         cursor: pointer;
+         margin-bottom: 20px;
+         -webkit-transition: ease-in-out .2s;
+          -o-transition: ease-in-out .2s;
+          transition: ease-in-out .2s;
+        }
+        .interative .buttons span:hover{
+          color: #000;
+          background: #fff;
+          box-shadow: 1px 3px 14px 2px #000;
+          -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+          -o-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
+          .interative .buttons span img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            max-width: 45px;
+            margin-top: 30px;
+          }
+
+/* PÁGINAS SEQUENCIAIS */
+  .two, .three, .four, .five, .six, .seven, .eight,.nine{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/galaxyBackground.jpg);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+  }
+   .two, .three, .four, .five, .six, .seven{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition:All 2s ease;
+    -webkit-transition:All 2s ease;
+    -moz-transition:All 2s ease;
+    -o-transition:All 2s ease;
+  }
+  .two{
+    background: url(../images/exploreOrCave.png);
+  }
+  .three{
+    background: url(../images/boilOrDrink.png);
+  }
+  .four{
+    background: url(../images/eatOrExplore.png);
+  }
+  .five{
+    background: url(../images/campOrJungle.png);
+  }
+  .six{
+    background: url(../images/spaceshipOrIgnore.png);
+  }
+  .seven{
+    background: url(../images/hello.png);
+  }
+  .eight{
+    background: url(../images/victoriousScreen.png);
+    color: #fff;
+    padding: 0 70px;
+  }
+    .eight .youWin{
+
+    }
+      .eight .youWin .textWin {
+        margin-top: 50px;
+      }
+        .eight .youWin .textWin p{
+          padding: 22px 30px;
+          margin: 0;
+          font-size: 20px;
+          font-style: italic;
+          background: #ffffffb0;
+          color: #000;
+          border-radius: 20px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .eight .youWin .textWin p span{
+          font-weight: bold;
+        }
+    .eight .youWin .winnerImage{
+      text-align: center;
+    }
+      .eight .youWin .winnerImage img{
+        width: 100%;
+        max-width: 300px;
+      }
+    .eight .youWin .buttons {
+      margin-top: 50px;
+      text-align: center;
+    }
+      .eight .youWin .buttons span{
+        border: 1px solid #fff;
+        display: block;
+        width: 100%;
+        max-width: 365px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px 20px;
+        border-radius: 12px;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        cursor: pointer;
+        margin-bottom: 20px;
+        -webkit-transition: ease-in-out .2s;
+        -o-transition: ease-in-out .2s;
+        transition: ease-in-out .2s;
+      }
+      .eight .youWin .buttons span:hover{
+        color: #000;
+        background: #fff;
+        box-shadow: 1px 3px 14px 2px #000;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+  .nine {
+    color: #fff;
+    padding: 0 70px;
+    background: url(../images/deadScreen.png);
+  }
+    .nine .youDead{
+
+    }
+      .nine .youDead .textDead{
+        margin-top: 50px;
+      }
+        .nine .youDead .textDead p{
+          padding: 22px 30px;
+          margin: 0;
+          font-size: 20px;
+          font-style: italic;
+          background: #ffffffb0;
+          color: #000;
+          border-radius: 20px;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .nine .youDead .textDead p span {
+          font-weight: bold;
+        }
+    .nine .youDead .lostImage{
+      text-align: center;
+    }
+       .nine .youDead .lostImage img{
+        width: 100%;
+        max-width: 200px;
+        margin-top: 30px;
+       }
+    .nine .youDead .buttons{
+      margin-top: 50px;
+      text-align: center;
+    }
+      .nine .youDead .buttons span{
+        border: 1px solid #fff;
+        display: block;
+        width: 100%;
+        max-width: 365px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px 20px;
+        border-radius: 12px;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        cursor: pointer;
+        margin-bottom: 20px;
+        -webkit-transition: ease-in-out .2s;
+        -o-transition: ease-in-out .2s;
+        transition: ease-in-out .2s;
+      }
+      .nine .youDead .buttons span:hover{
+        color: #000;
+        background: #fff;
+        box-shadow: 1px 3px 14px 2px #000;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+
+/*RODAPÉ*/
+  .footer{
+    width: 100%;
+    position: relative;
+    padding-top: 0;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+    background: url(../images/galaxyBackground.jpg);
+    min-height: 271px;
+    margin-top: -100px;
+  }
+    .footer::before{
+     content: "";
+     display: block;
+     width: 100%;
+     min-height: 183px;
+     background-image: url(../images/footer.png);
+     background-size: cover!important;
+     background-position: center!important;
+     position: absolute;
+     z-index: 2;
+     bottom: 0;
+    }
+
+/*@MEDIA QUERY*/
+  @media(max-width: 1367px){
+    .one .data .astronaut figure {
+      width: 100%;
+      max-width: 370px;
+      position: absolute;
+      right: 0%;
+      top: 0;
+    }
+    .footer::before {
+      min-height: 144px;
+    }
+    .one .data .form form button {
+      margin-left: 0;
+      display: block;
+      margin: 20px auto 0;
+    }
+  }
+  @media(max-width: 1200px){
+    .one .data .astronaut figure {
+      max-width: 400px;
+    }
+    .one .data .astronaut .messageAstronaut {
+      max-width: 330px;
+    }
+    .interative .textInterative p {
+      font-size: 18px;
+    }
+    .interative .buttons span {
+      font-size: 30px;
+    }
+    .footer::before {
+      min-height: 121px;
+    }
+  }
+
+  @media(max-width: 991px){
+    .one .initial figure {
+      max-width: 650px;
+    }
+    .one .initial .text h2 {
+      font-size: 115px;
+    }
+    .one .initial .text h1 {
+      font-size: 50px;
+    }
+    .one .data .astronaut figure {
+      position: initial;
+      left: initial;
+      top: initial;
+      margin: 50px auto;
+    }
+    .one .data .astronaut .messageAstronaut {
+      max-width: 100%;
+    }
+    .one .data .form {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .one .data .form form button {
+      margin-left: 0;
+      margin: 20px auto 0;
+    }
+    .one .data .astronaut {
+      margin-top: 50px;
+    }
+    .one .data .form form input{
+      max-width: 100%;
+    }
+    .interative .buttons span img {
+      max-width: 30px;
+      margin-top: 10px;
+    }
+    .interative .buttons span {
+      max-width: 275px;
+      font-size: 32px;
+    }
+    .interative .textInterative p {
+      font-size: 16px;
+      padding: 22px 15px;
+    }
+    .interative {
+      padding-top: 50px;
+    }
+    .footer::before {
+      min-height: 107px;
+    }
+    .interative {
+      margin-bottom: 0;
+    }
+    .eight .youWin .textWin p,.nine .youDead .textDead p{
+      padding: 22px 15px;
+      font-size: 18px;
+    }
+    .eight .youWin .winnerImage img {
+      margin-top: 30px;
+    }
+    #zero #number {
+      font-size: 160px;
+    }
+    #zero .bgVideo {
+      right: -340px;
+    }
+  }
+  @media(max-width: 768px){
+    .one .initial .text h2 {
+      font-size: 105px;
+    }
+    .one .initial .text h1 {
+      font-size: 45px;
+    }
+    .interative .buttons span {
+      margin-top: 50px;
+    }
+    .interative .textInterative {
+      width: 100%;
+    }
+    .footer::before {
+      min-height: 78px;
+    }
+    .footer {
+      min-height: 0;
+      margin: 0;
+      padding-top: 50px;
+    }
+    .eight , .nine{
+      padding: 0 20px;
+    }
+    #zero .bgVideo {
+      right: -720px;
+    }
+  }
+
+  @media(max-width: 610px){
+    .one .initial figure {
+      max-width: 430px;
+    }
+    .one .initial .text h2 {
+      font-size: 89px;
+    }
+    .one .initial .text h1 {
+      font-size: 33px;
+    }
+    .one .initial .text p {
+      font-size: 33px;
+    }
+    .one .initial a {
+      width: 14px;
+      height: 45px;
+    }
+    .interative .buttons span img {
+      max-width: 23px;
+    }
+    .interative .buttons span {
+      max-width: 235px;
+      font-size: 21px;
+    }
+    .footer::before {
+      min-height: 68px;
+    }
+  }
+
+  @media(max-width: 445px){
+    .one .initial .text h2 {
+      font-size: 64px;
+      margin: 0;
+    }
+    .one .initial .text h1 {
+      font-size: 22px;
+    }
+    .one .initial .text p {
+      font-size: 30px;
+    }
+    .footer::before {
+      min-height: 48px;
+    }
+    .footer {
+      min-height: 0;
+      margin: 0;
+      padding-top: 100px;
+    }
+    .eight .youWin .textWin p, .nine .youDead .textDead p {
+      font-size: 16px;
+    }
+  }
+  @media(max-width: 320px){
+    .one .initial .text h2 {
+      font-size: 55px;
+      margin: 0;
+    }
+    .one .initial .text h1 {
+      font-size: 20px;
+    }
+    .one .initial .text p {
+      font-size: 27px;
+    }
+    .footer::before {
+      min-height: 33px;
+    }
+  }
+
+  @keyframes rotatePlanet {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+
+  @keyframes moveAstronaut {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 25px;
+    }
+    100% {
+      top: 0px;
+    }
+}
+
+  @keyframes moveArrow {
+    0% {
+      bottom: 17px;
+    }
+    50% {
+      bottom: 38px;
+    }
+    100% {
+      bottom: 17px;
+    }
+}

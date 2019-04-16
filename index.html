@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<!-- META -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content=""/>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="" />
+
+		<!-- TÍTULO -->
+		<title>Mundo das Caldeiras</title>
+
+		<!-- TÍTULO -->
+		<title>Mundo das Caldeiras</title>
+
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libraries/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/resources/styles/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="assets/resources/styles/hover.css"/>
+		<link rel="stylesheet" href="assets/resources/styles/site.css" />
+		
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/libraries/jquery/animate.js"></script>
+		<script src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/resources/scripts/geral.js"></script>
+		<script src="assets/resources/scripts/ourFunctions.js"></script>
+		<script src="assets/resources/scripts/animations.js"></script>
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/resources/images/favicon.ico" /> 
+	</head>
+	<body onload="start()" id="body" class="breakScroll">
+		<div id="zero">
+			<video autoplay loop muted class="bgVideo">
+				<source src="assets/resources/images/planetVideo.mp4">
+			</video>
+			<h1 id="number"></h1>
+		</div>
+		<div class="one" id="one">
+			<div class="containerFull">
+				<section class="initial">
+					<figure>
+						<img src="assets/resources/images/planetOfGods.png" alt="planetOfGods">
+					</figure>
+					<div class="text">
+						<h2>Bem vindo ao</h2>
+						<h1>mundo</h1>
+						<p>das</p>
+						<h1>caldeiras</h1>
+					</div>
+					<a href="#data" id="nextArea" class="scroll"></a>
+				</section>
+				<section class="data" id="data">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form">
+								<form id="form-validation" action="#">
+									<input type="text" placeholder="Digite seu nome" id="inputName" pattern="^[A-ZÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ][a-záàâãéèêíïóôõöúçñ]+([ ][A-ZÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑa-záàâãéèêíïóôõöúçñ]+)*$" required>
+									<input type="number" placeholder="Digite sua idade" id="inputAge" min="18" required>
+									<input type="text" placeholder="Digite onde você está" id="inputPlace" required>
+									<input type="text" placeholder="Digite seu CPF" id="inputCpf" pattern="^[0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[\-]?[0-9]{2}$" required>
+									<input type="text" placeholder="Digite a frase 'PHP é gambiarra'" id="inputPhrase" pattern="PHP é gambiarra" required>
+									<button type="submit" id="validationButton">Próximo</button>					
+								</form>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="astronaut">
+								<span class="messageAstronaut"><p>Olá! Antes de se aventurar pelo mundo das caldeiras, por favor preencha o formulário.</p></span>
+								<figure>
+									<img src="assets/resources/images/astronaut.png" alt="astronaut">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="interative">
+					<div class="textInterative">
+						<p id="dinamicText"></p>
+					</div>
+					<div class="buttons">
+						<div class="row">
+							<div class="col-sm-6">
+								<span id="explore">Explorar <img src="assets/resources/images/pickaxe.png" alt="" data-padrao="assets/resources/images/pickaxe.png" data-hover="assets/resources/images/pickaxe-blac.png">
+								</span>
+							</div>
+							<div class="col-sm-6">
+								<span id="drinkWater">Água <img src="assets/resources/images/water.png" alt="" data-padrao="assets/resources/images/water.png" data-hover="assets/resources/images/water-blac.png">
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- RODAPÉ -->
+				<footer class="footer">
+
+				</footer>
+			</div>
+			
+		</div>
+		<div class="two" id="two">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você começa a chegar mais próximo da entrada da floresta. Quando chega exatamente na entrada uma criatura estranha passa voando pela sua cabeça e você se assusta, você olha em direção ao lugar que a criatura saiu e encontra uma entrada para um outro lugar misterioso semelhante a uma caverna. A sua curiosidade aumenta bastante e você precisa tomar uma decisão... Continuar explorando a floresta ou entrar na caverna?</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-6">
+							<span id="forest">Floresta <img src="assets/resources/images/trees.png" alt="" data-padrao="assets/resources/images/trees.png" data-hover="assets/resources/images/trees-blac.png">
+							</span>
+						</div>
+						<div class="col-sm-6">
+							<span id="cave">Caverna <img src="assets/resources/images/cave.png" alt="" data-padrao="assets/resources/images/cave.png" data-hover="assets/resources/images/cave-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="three" id="three">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você começa a se aproximar da fonte e sentir um odor um pouco estranho o que te preocupa em relação a qualidade da água. A sede começa a aumentar e você se lembra que tem um isqueiro, olhando ao seu redor você ve algumas madeiras e pensa em ferver a água, porém você não sabe o que pode acontecer ao ligar o isqueiro, já que o gás daquele mundo é desconhecido. Ferver a água antes de tomar ou tomar sem ferver?</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-6">
+							<span id="boil">Ferver <img src="assets/resources/images/cooking.png" alt="" data-padrao="assets/resources/images/cooking.png" data-hover="assets/resources/images/cooking-blac.png">
+							</span>
+						</div>
+						<div class="col-sm-6">
+							<span id="drinkWaterOther">Tomar <img src="assets/resources/images/drink.png" alt="" data-padrao="assets/resources/images/drink.png" data-hover="assets/resources/images/drink-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="four" id="four">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você acende o fogo sem problemas, ferve a água e guarda um pouco na garrafa. Você ainda sem entender continua pensando como foi parar nesse mundo, começa a refletir e pensar se vai conseguir ver sua família novamente e refletir na vida. Depois de algum tempo sentado naquele local, você começa a sentir fome. Você lembra que leu em um livro que algumas plantas são comestíveis e próximo ao local tem algumas plantas, mas você fica com receio e começa a cogitar a possibilidade de começar a explorar aquela floresta e encontrar algum alimento. O que você escolhe?</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-6">
+							<span id="eat">Comer <img src="assets/resources/images/eat.png" alt="" data-padrao="assets/resources/images/eat.png" data-hover="assets/resources/images/eat-blac.png">
+							</span>
+						</div>
+						<div class="col-sm-6">
+							<span id="otherExplore">Explorar <img src="assets/resources/images/pickaxe.png" alt="" data-padrao="assets/resources/images/pickaxe.png" data-hover="assets/resources/images/pickaxe-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="five" id="five">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você começa a entrar na selva, quanto mais profundo você está, mais barulhos estranhos você ouve. Você passa 3 horas andando pela floresta e não encontra nada de diferente, apenas árvores e mais barulhos estranhos. Está começando a anoitecer e você não sabe o que vai acontecer. Depois de mais um tempo andando na mata, você nota uma área mais descoberta ao seu lado direito. Você começa a pensar se permanecer na floresta é seguro já que tem mais proteção e consegue se esconder ou ir no descampado talvez seja mais seguro já que você tem maior visibilidade e menos animais.</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-6">
+							<span id="forestContinue">Floresta <img src="assets/resources/images/trees.png" alt="" data-padrao="assets/resources/images/trees.png" data-hover="assets/resources/images/trees-blac.png">
+							</span>
+						</div>
+						<div class="col-sm-6">
+							<span id="camp">Campo <img src="assets/resources/images/field.png" alt="" data-padrao="assets/resources/images/field.png" data-hover="assets/resources/images/field-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="six" id="six" style="display: ; ">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você sai todo cortado da floresta, já que teve que passar por todos galhos e árvores até conseguir chegar na área do descampado. Sua fome está muito grande e você começa a pensar se ir no descampado foi mesmo uma boa ideia, totalmente esgotado e com fome você cai no chão e fecha os olhos. Alguns segundos se passam e uma luz muito forte passa pela sua cabeça, você abre os olhos rapidamente e enxerga um vulto parecido com uma espaçonave indo em direção contrária da floresta. Você quer ver o que é essa espaçonave ou ignorar e continuar explorando outra área?</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-6">
+							<span id="see">Ver <img src="assets/resources/images/see.png" alt="" data-padrao="assets/resources/images/see.png" data-hover="assets/resources/images/see-blac.png">
+							</span>
+						</div>
+						<div class="col-sm-6">
+							<span id="ignore">Ignorar <img src="assets/resources/images/pickaxe.png" alt="" data-padrao="assets/resources/images/pickaxe.png" data-hover="assets/resources/images/pickaxe-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div class="seven" id="seven" style="display: ; ">
+			<section class="interative">
+				<div class="textInterative">
+					<p id="dinamicText">Você junta forças e consegue levantar. Se concentra bem na direação que a espaço nave foi e começa a caminhar, depois de 10 minutos andando, você chega a espaço nave. Você decide entrar na nave, começa a andar e não vê ninguém, apenas corredores e mais corredores de solidão. Quando você chega em uma sala parecida a uma cabine, enxerga uma tela de computador acesa, você chega mais perto e enxerga a frase 'Olá'.</p>
+				</div>
+				<div class="buttons">
+					<div class="row">
+						<div class="col-sm-12">
+							<span id="continue">Continuar <img src="assets/resources/images/next.png" alt="" data-padrao="assets/resources/images/next.png" data-hover="assets/resources/images/next-blac.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>
